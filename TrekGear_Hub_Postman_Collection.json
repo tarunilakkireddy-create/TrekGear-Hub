@@ -1,0 +1,191 @@
+﻿{
+    "item":  [
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Welcome API",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/test"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Test Database Connection",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Get All Tents",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents?size=Large"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Search Large Tents",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents/8"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Get Tent by ID",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "body":  {
+                                                  "raw":  "{\"tent_name\":\"Postman Test Tent\",\"brand\":\"Wildcraft\",\"size\":\"Large\",\"capacity\":4,\"price\":2500,\"location\":\"Hyderabad\",\"availability\":\"Available\",\"description\":\"Test tent for Postman collection\"}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              },
+                                                  "mode":  "raw"
+                                              },
+                                     "method":  "POST",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Add New Tent",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "body":  {
+                                                  "raw":  "{\"tent_code\":\"FAKE-1234\",\"tent_name\":\"Updated Postman Test Tent\",\"brand\":\"Wildcraft\",\"size\":\"Medium\",\"capacity\":3,\"price\":3000,\"location\":\"Hyderabad\",\"availability\":\"Available\",\"description\":\"Updated test tent\"}",
+                                                  "options":  {
+                                                                  "raw":  {
+                                                                              "language":  "json"
+                                                                          }
+                                                              },
+                                                  "mode":  "raw"
+                                              },
+                                     "method":  "PUT",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents/10"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Update Tent",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents/10"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Verify Automatic Tent Code",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/rentals"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Get Rental Details",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "GET",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/audit-logs"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Get Audit Logs",
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "request":  {
+                                     "method":  "DELETE",
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/tents/999"
+                                             },
+                                     "header":  [
+
+                                                ]
+                                 },
+                     "name":  "Delete Nonexistent Tent",
+                     "response":  [
+
+                                  ]
+                 }
+             ],
+    "info":  {
+                 "name":  "TrekGear Hub API Collection",
+                 "schema":  "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+             }
+}
