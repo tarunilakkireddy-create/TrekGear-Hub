@@ -182,6 +182,21 @@
                      "response":  [
 
                                   ]
+                 },
+                 {
+                     "name":  "Get All Trekkers",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:5000/api/trekkers"
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
                  }
              ],
     "info":  {
