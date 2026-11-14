@@ -6,15 +6,18 @@ const db = require('./database/db');
 const tentRoutes = require('./routes/tentRoutes');
 const auditRoutes = require('./routes/auditRoutes');
 const rentalRoutes = require('./routes/rentalRoutes');
+const trekkerRoutes = require('./routes/trekkerRoutes');
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-// Tent API routes
+// API routes
 app.use('/api/tents', tentRoutes);
 app.use('/api/audit-logs', auditRoutes);
 app.use('/api/rentals', rentalRoutes);
+app.use('/api/trekkers', trekkerRoutes);
 
 // Home route
 app.get('/', (req, res) => {
