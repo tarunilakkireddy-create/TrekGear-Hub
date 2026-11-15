@@ -62,10 +62,10 @@ app.get('/api/tables', (req, res) => {
     );
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 db.ready.then(() => {
-    app.listen(PORT, () => {
+    app.listen(PORT, '0.0.0.0', () => {
         console.log('TrekGear Hub Backend Started!');
         console.log(`Server running at http://localhost:${PORT}`);
     });
